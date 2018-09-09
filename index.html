@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title>Gem Game</title>
+            <link rel="stylesheet" href="assets/css/reset.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <meta name="viewport" content="width=device-width">
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="assets/css/style.css"> 
+    </head>
+    <body class="gameContainer">
+        <header>
+                <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                          <h1 class="display-4">THEY'RE MINERALS</h1>
+                          <p> Click a gem to begin! each gem has a different value between 1 and 10!</p>
+                          <p> combine your gems to match the target total points! if you match it you win!</p>
+                          <p> After you Win or lose a game click a gem again to start another!</p>
+                          
+                        </div>
+                      </div>
+            <h1></h1>
+        </header>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="#gameStarter">Click here to start the game!</button>
+        <div class="d-flex justify-content-start img-fluid">
+            <button  value="gemRed">
+                <img src="assets/images/gemRed.jpg" alt="Red gem" id="gemRed" class="rounded-circle gemButton img-fluid">
+            </button>
+            <button>
+                <img src="assets/images/gemBlue.jpg" value="gemBlue" alt="Blue gem" id="gemBlue" class="rounded-circle gemButton img-fluid">
+            </button>
+            <button value="gemGreen">
+                <img src="assets/images/gemGreen.jpg" alt="Green gem" id="gemGreen" class="rounded-circle gemButton img-fluid">
+            </button>
+            <button value="gemYellow">
+                <img src="assets/images/gemYellow.jpg" alt="Yellow gem" id="gemYellow" class="rounded-circle gemButton img-fluid">
+            </button>
+            <button value="gemPurple">
+                <img src="assets/images/gemPurple.png" alt="Purple gem" id="gemPurple" class="rounded-circle gemButton img-fluid">
+            </button>
+        </div>
+        <div id="playerPoints">
+                <h3> your collected points: </h3>
+                <h3 id="gemResults"></h3>
+                <h3> your target total points</h3>
+                <h3 id="gemAssign">THIS GAMES NUMBER!</h3>
+            </div>
+        <div id="scoreBox">
+            </div>
+            <div id="winsLosesBox">
+                <h3>wins :</h3>
+                <h1 id="winsBox"></h1>
+                <h3>Loses :</h3>
+                <h1 id="losesBox"></h1>
+                
+            </div>
+        
+
+    </body>
+    <script src="assets/javascript/game.js"></script>
+</html>
